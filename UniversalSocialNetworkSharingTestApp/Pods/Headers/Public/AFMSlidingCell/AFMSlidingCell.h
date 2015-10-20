@@ -1,0 +1,1 @@
+../../../AFMSlidingCell/Pod/Classes/AFMSlidingCell.h

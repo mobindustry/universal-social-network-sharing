@@ -1,0 +1,1 @@
+../../../LSSwipeToDeleteCollectionViewLayout/LSSwipeToDeleteCollectionViewLayout/LSSwipeToDeleteCollectionViewLayout.h

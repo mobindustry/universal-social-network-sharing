@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="MUSCommentsAndLikesCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Gx3-3E-Fgv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="vKG-VF-lcx"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="UiF-Lr-ODD"/>
+                        </connections>
+                    </tableView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Gx3-3E-Fgv" secondAttribute="trailing" id="2rC-EL-dsy"/>
+                    <constraint firstItem="Gx3-3E-Fgv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="W5R-bU-dgn"/>
+                    <constraint firstItem="Gx3-3E-Fgv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="j3a-6g-RaB"/>
+                    <constraint firstAttribute="bottom" secondItem="Gx3-3E-Fgv" secondAttribute="bottom" id="neU-OB-Gng"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="commentsAndLikesPostTableView" destination="Gx3-3E-Fgv" id="1Hf-Ta-qYL"/>
+            </connections>
+            <point key="canvasLocation" x="294" y="219.5"/>
+        </tableViewCell>
+    </objects>
+</document>
